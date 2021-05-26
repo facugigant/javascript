@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Carrito</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <h1 style="text-align: center; padding-bottom: 50px; font-size: 50px;">Arma tu computadora</h1>
+    <div class="container">
+        <div class="row">            
+
+            <main id="items"></main>
+            
+            <!-- Carrito -->
+                        <!-- Elementos generados a partir del JSON -->
+                        <aside id="wrapper">
+
+                            <h2 style="text-align: center;">Mi Carrito</h2>
+                            <!-- Elementos del carrito -->
+                            <ul id="carrito" class="list-group"></ul>
+                            <hr>
+                            <!-- Precio total -->
+                            <p class="text-right">Total: <span style="color: green;" id="total"></span>&#36;</p>
+                            <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                            <button id="boton-vaciar" class="btn btn-success">Comprar</button>
+            
+                        </aside>
+        </div>
+    </div>
+</body>
+<script src="App.js"></script>
+<script src="Productos.js"></script>
+</html>

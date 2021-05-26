@@ -1,0 +1,64 @@
+main {
+  display: grid;
+  width: 80%;
+  margin-left: -50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 88px 48px;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . .";
+}
+.card {
+  width: 250px;
+  height: 350px;
+  text-align: center;
+}
+.list-group-item {
+  font-size: 13px;
+}
+
+#wrapper {
+  width: 25%;
+
+}
+#stream {
+  width: 25%;
+  background: #ccc;
+  float: right;
+}
+#sidebar {
+
+  width: 25%;
+}
+aside {
+  position: fixed;
+  top: 9.5vw;
+  border: 1px solid black;
+}
+#boton-vaciar{
+    margin-left: 0.5vw;
+    margin-top: -7vw;
+}
+/* Responsive Aside */
+
+@media screen and (max-width: 1920px) and (min-width: 1500px){
+aside{
+margin-left: 50%;
+}
+  }
+  @media (max-width: 1499px) and (min-width:1300px){
+    aside{
+      margin-left: 60%;
+      }
+
+  }
+  @media (max-width: 1280px) and (min-width:768px){
+    aside{
+      margin-left: 70%;
+      }
+  }
+
+    
