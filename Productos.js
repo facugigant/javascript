@@ -61,18 +61,18 @@ const baseDeDatos = [
           id: 10,
           nombre: 'CPU Gama Alta',
           precio: 1000,
-          imagen: 'img/Cpu.jpg'
+          imagen: 'img/cpu.jpg'
       },
       {
           id: 11,
           nombre: 'CPU Gama Media',
           precio: 400,
-          imagen: 'img/Cpu.jpg'
+          imagen: 'img/cpu.jpg'
       },
       {
           id: 12,
           nombre: 'CPU Gama Baja',
           precio: 200,
-          imagen: 'img/Cpu.jpg'
+          imagen: 'img/cpu.jpg'
       },
   ];
