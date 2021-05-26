@@ -4,7 +4,7 @@ const baseDeDatos = [
           id: 1,
           nombre: 'Motherboard modelo 1',
           precio: 300,
-          imagen: 'img/Motherboard.jpg'
+          imagen: '/img/Motherboard.jpg'
       },
       {
           id: 2,
