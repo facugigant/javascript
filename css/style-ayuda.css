@@ -1,0 +1,23 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+main{
+height: 100vw;
+overflow: hidden;
+
+  text-align: center;
+}
+footer{
+  margin: 0;
+  padding-top: 0;
+  
+  }
+.card{
+margin: auto;
+  width: 60vw;
+  text-align: center;
+
+}
+
+

@@ -1,0 +1,54 @@
+*{margin: 0;
+padding: 0;}
+
+#items{
+  margin-top: 25px;
+  display: grid;
+  justify-content: center;
+width: 100vw;
+grid-template-columns: repeat(5, 200px);
+row-gap: 25px;
+
+}
+
+.card {
+  width: 15vw;
+  height: 20vw;
+  text-align: center;
+
+}
+.card p, h5{
+  font-size: 1vw;
+}
+
+
+/* Barra productos*/
+.productos-barra h2, p{
+  text-align: center;
+
+}
+
+.buscador{
+  display: flex;
+text-align: center;
+ width: 50%;
+ justify-content: center;
+}
+.boton{
+  color: red;
+  width: 100%;
+  justify-content: center;
+}
+.buscadores{
+text-align: center;
+width: 100%;
+}
+
+aside{
+margin-top: 50px;
+  margin: auto;
+  width: 50vw;
+  border: 2px solid black;
+  padding: 50px;
+  overflow: hidden;
+}

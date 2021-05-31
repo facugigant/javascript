@@ -1,0 +1,11 @@
+main{
+    height: 100vw;
+    overflow: hidden;
+    
+      text-align: center;
+    }
+    footer{
+      margin: 0;
+      padding-top: 0;
+      
+      }
