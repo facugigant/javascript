@@ -12,17 +12,19 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Flickity -->
+    <link rel="stylesheet" href="assets/vendor/flickity/dist/flickity.min.css" />
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/style-index.css">
-
-
+    <link rel="stylesheet" href="./css/style-productos.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style-reutilizable.css">
     <!-- Navbar-->
-
     <link rel="stylesheet" href="./css/navbar.css">
 
 </head>
 
 <body>
+
     <!-- Navbar -->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -38,10 +40,10 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link " href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="productos.html">Productos</a>
+                        <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="ayuda.html">Ayuda</a>
@@ -61,48 +63,55 @@
 
                 </ul>
 
-
+                </a>
             </div>
         </div>
     </nav>
     <!-- Fin de Navbar -->
-    <main>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./images/shooter/game-cos-1-500x375.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./images/shooter/game-cos-1-500x375.jpg"" class=" d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./images/shooter/game-cos-1-500x375.jpg"" class=" d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+
+    <div class="productos-barra">
+        <p class="titulo-pagina">Productos</p>
+        <input class="container-fluid buscador" placeholder="Buscar producto" id="buscador">
+        <div class="buscadores">
+            <a href="" class="boton-filtrar" id="all">Todo</a>
+            <a href="" class="boton-filtrar" id="all">Todo</a>
+            <a href="" class="boton-filtrar" id="all">Todo</a>
+            <a href="" class="boton-filtrar" id="all">Todo</a>
+            <a href="" class="boton-filtrar" id="all">Todo</a>
         </div>
 
+    </div>
 
-    </main>
 
+
+
+
+
+    <!-- Carrito -->
+    <!-- Elementos generados a partir del JSON -->
+    <aside>
+
+        <h2 style="text-align: center;">Mi Carrito</h2>
+        <!-- Elementos del carrito -->
+        <ul id="carrito" class="list-group"></ul>
+        <hr>
+        <!-- Precio total -->
+        <p class="text-right">Total: <span style="color: green;" id="total"></span>&#36;</p>
+        <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+        <button id="boton-comprar" class="btn btn-success">Comprar</button>
+
+    </aside>
+    <div class="container-fluid" id="items">
+
+    </div>
+    </div>
     <!-- Article -->
-    <article>
-        <div class="social-bar">
-            <a href="" class="icon icon-facebook" target="_blank"></a>
-            <a href="" class="icon icon-twitter" target="_blank"></a>
-            <a href="" class="icon icon-youtube" target="_blank"></a>
-            <a href="" class="icon icon-instagram" target="_blank"></a>
-        </div>
-    </article>
+    <div class="social-bar">
+        <a href="" class="icon icon-facebook" target="_blank"></a>
+        <a href="" class="icon icon-twitter" target="_blank"></a>
+        <a href="" class="icon icon-youtube" target="_blank"></a>
+        <a href="" class="icon icon-instagram" target="_blank"></a>
+    </div>
 
     <!-- Comienzo de footer -->
 
@@ -116,12 +125,15 @@
 
         </div>
     </footer>
-
+    <!-- Bootstrap -->
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 
+    <script src="./javascript/app.js"></script>
+    <script src="./javascript/productos.js"></script>
 </body>
+
 
 </html>
